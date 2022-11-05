@@ -26,11 +26,14 @@ body {
 #header {
     background-color: var(--header-bgcolor);
     height: var(--hdr-h);
+}
+
+#navbar {
     text-align: right;
     margin-right: 0;
 }
 
-#header a {
+#navbar>* {
     display: inline-block;
 }
 
