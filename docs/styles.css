@@ -14,18 +14,18 @@
 
 :root {
     --header-bgcolor: orange;
+    --hdr-h: 15vh;
 }
 
 body {
     font-family: 'Lato', sans-serif;
     background-color: rgba(225, 225, 225, 1);
     color: black;
-    --hdr-h: 15vh;
 }
 
 #header {
     background-color: var(--header-bgcolor);
-    height: 20vh;
+    height: var(--hdr-h);
 }
 
 #logo-nav {
