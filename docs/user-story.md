@@ -2,7 +2,7 @@
 
 # **Build a Personal Portfolio Webpage**
 
-**Objective:** Build an app that is functionally similar to [https://personal-portfolio.freecodecamp.rocks](https://personal-portfolio.freecodecamp.rocks/)
+**Objective:** Build an app that is functionally similar to https://personal-portfolio.freecodecamp.rocks
 **User Stories:**
 
 1. Your portfolio should have a welcome section with an `id` of `welcome-section`
@@ -19,4 +19,3 @@
 
 Fulfill the user stories and pass all the tests below to complete this project. Give it your own personal style. Happy Coding!
 **Note:** Be sure to add `<link rel="stylesheet" href="styles.css">` in your HTML to link your stylesheet and apply your CSS
-
