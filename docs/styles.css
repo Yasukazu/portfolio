@@ -13,7 +13,7 @@
 }
 
 :root {
-    --header-bgcolor: rgb(199, 0, 57);
+    --header-bgcolor: rgba(199, 0, 57, 0.5);
     --hdr-h: 10vh;
     --wcm-h: 30vh;
     --welcome-bgcolor: black;
@@ -47,9 +47,16 @@ body {
     margin: 0 1rem;
 }
 
-main>section {
-    margin-top: -var(--hdr-h);
-    padding-top: var(--hdr-h);
+a.anchor {
+    display: block;
+    /* height: var(--hdr-h); */
+}
+
+section {
+    /* margin-top: -var(--hdr-h);
+    padding-top: var(--hdr-h); */
+    border: medium dotted blue;
+    height: 100vh;
 }
 
 #welcome-section {
@@ -92,6 +99,12 @@ h2 {
     margin: 0.5em 0 1em 0;
 }
 
+.sticky-item {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
 #main {
     margin: 0.5rem;
     padding-bottom: 0;
@@ -113,9 +126,6 @@ h2 {
     flex-direction: row;
     width: 100%;
     height: var(--hdr-h);
-    position: fixed;
-    top: 0;
-    z-index: 999;
 }
 
 #sec-link {
