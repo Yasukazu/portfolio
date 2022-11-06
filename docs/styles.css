@@ -44,13 +44,6 @@ body {
     margin: 0 1rem;
 }
 
-#logo-nav {
-    height: var(--hdr-h);
-    display: flex;
-    flex-direction: row;
-    width: auto;
-}
-
 h1,
 h2,
 h3 {
@@ -191,6 +184,12 @@ fieldset input[type="submit"] {
 
 ul {
     list-style: none;
+}
+
+#projects {
+    color: white;
+    background-color: #6699CC;
+    height: 100vh;
 }
 
 .feature {
