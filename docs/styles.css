@@ -13,14 +13,17 @@
 }
 
 :root {
-    --header-bgcolor: orange;
-    --hdr-h: 15vh;
+    --header-bgcolor: rgb(199, 0, 57);
+    --hdr-h: 10vh;
+    --wcm-h: 30vh;
+    --welcome-bgcolor: black;
+    --welcome-color: white;
 }
 
 body {
-    font-family: 'Lato', sans-serif;
-    background-color: rgba(225, 225, 225, 1);
-    color: black;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(35, 35, 35, 1);
+    color: white;
 }
 
 #header {
@@ -32,16 +35,34 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: end;
-    align-items: end;
+    align-items: center;
 }
 
 #navbar a {
+    font-size: x-large;
     display: block;
-    background-color: red;
     color: white;
     text-decoration: none;
     text-align: center;
     margin: 0 1rem;
+}
+
+main>section {
+    margin-top: -var(--hdr-h);
+    padding-top: var(--hdr-h);
+}
+
+#welcome-section {
+    padding: 0rem 0 1rem 0;
+}
+
+#welcome-section p {
+    color: red;
+    font-size: x-large;
+    font-weight: 100;
+    font-style: italic;
+    text-align: center;
+    margin: 0 0 0 1rem;
 }
 
 h1,
@@ -71,18 +92,8 @@ h2 {
     margin: 0.5em 0 1em 0;
 }
 
-#logo-company {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.5em;
-    width: 50%;
-    height: var(--hdr-h);
-}
-
 #main {
     margin: 0.5rem;
-    margin-top: -var(--hdr-h);
-    padding-top: var(--hdr-h);
     padding-bottom: 0;
     top: var(--hdr-h);
 }
@@ -124,18 +135,6 @@ h2 {
     background-color: yellow;
     text-decoration: none;
     padding: 0.5em 1em;
-}
-
-#navbar a::after {
-    content: " >";
-}
-
-section h2::before {
-    content: "<";
-}
-
-section h2::after {
-    content: ">";
 }
 
 fieldset {
@@ -187,8 +186,7 @@ ul {
 }
 
 #projects {
-    color: white;
-    background-color: #6699CC;
+    background-color: #45567D;
     height: 100vh;
 }
 
