@@ -63,7 +63,8 @@ main>section {
 
 section {
     border: medium dotted blue;
-    height: calc(100vh - var(--hdr-h));
+    height: auto;
+    /*calc(100vh - var(--hdr-h));*/
     display: block;
 }
 
@@ -128,7 +129,7 @@ article h3:after {
 
 .codepen-iframe {
     display: block;
-    height: 50vh;
+    height: 65vh;
     width: 100%;
 }
 
@@ -159,37 +160,5 @@ footer * {
         padding-top: calc(var(--hdr-h) * 1.6);
     }
 
-    #logo-company {
-        width: 100%;
-        height: calc(var(--hdr-h) / 2);
-    }
 
-    #sec-link {
-        height: var(--hdr-h);
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        gap: calc(var(--hdr-h) / 10) 0;
-    }
-
-    #header-img {
-        width: 100%;
-        height: 10vh;
-        object-fit: cover;
-    }
-
-    legend {
-        text-align: left;
-    }
-
-    #form fieldset {
-        align-items: start;
-    }
-
-    .products {
-        flex-direction: column;
-        margin: 3vh 0;
-        align-items: center;
-        gap: 5vh 0;
-    }
 }
