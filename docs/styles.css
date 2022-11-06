@@ -61,7 +61,7 @@ main>section {
 
 section {
     border: medium dotted blue;
-    height: 100vh;
+    height: calc(100vh - var(--hdr-h));
 }
 
 #welcome-section p {
@@ -104,6 +104,21 @@ h2 {
 
 ul {
     list-style: none;
+}
+
+article {
+    width: 90%;
+    margin: 0 0 2rem auto;
+}
+
+article h3:after {
+    content: ":";
+}
+
+.codepen-iframe {
+    display: block;
+    height: 50vh;
+    width: 100%;
 }
 
 footer {
