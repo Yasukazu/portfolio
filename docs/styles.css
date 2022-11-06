@@ -29,7 +29,10 @@ body {
 }
 
 #navbar {
-    align-content: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
 }
 
 #navbar a {
@@ -257,17 +260,17 @@ footer * {
     margin: 0.5em 1em;
 }
 
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 550px) {
     body {
-        --hdr-h: 50vh;
+        --hdr-h: 20vh;
     }
 
     #navbar {
         height: var(--hdr-h);
         flex-direction: column;
         height: auto;
-        /*var(--hdr-h);*/
         width: 100vw;
+        gap: 1rem 0;
     }
 
     #main {
