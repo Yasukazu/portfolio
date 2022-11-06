@@ -29,13 +29,13 @@ body {
 }
 
 #navbar {
-    text-align: right;
-    margin-right: 0;
+    align-content: right;
 }
 
 #navbar a {
     display: inline-block;
     text-decoration: none;
+    text-align: center;
 }
 
 #logo-nav {
