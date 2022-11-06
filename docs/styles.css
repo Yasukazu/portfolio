@@ -17,6 +17,8 @@
     --hdr-h: 4rem;
     --welcome-bgcolor: black;
     --welcome-color: white;
+    --projects-blue: #45567d;
+    --main-bgcolor: rgba(35, 35, 35, 1);
 }
 
 html {
@@ -25,7 +27,7 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: rgba(35, 35, 35, 1);
+    background-color: var(--main-bgcolor);
     color: white;
 }
 
@@ -62,6 +64,15 @@ main>section {
 section {
     border: medium dotted blue;
     height: calc(100vh - var(--hdr-h));
+    display: block;
+}
+
+section:nth-of-type(2) {
+    background-color: var(--projects-blue);
+}
+
+section article {
+    background-color: var(--main-bgcolor);
 }
 
 #welcome-section p {
