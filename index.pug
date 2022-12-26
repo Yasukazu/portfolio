@@ -1,0 +1,79 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(name='description' content="Portfolio project in 'Responsive Web Design' course of freeCodeCamp.org")
+  title Portfolio as a project in &apos;Responsive Web Design&apos; course of freeCodeCamp.org
+  link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css' integrity='sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/2cq5FLXAZQ7Ay' crossorigin='anonymous')
+  link(href='https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap' rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css?family=Raleway:700&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css')
+  link(rel='stylesheet' href='styles.css')
+header#header.fixed-item
+  nav#navbar
+    a(href='#a-1') Welcome
+    a(href='#a-2') Projects
+    a(href='#a-3') Contact
+main
+  section#welcome-section
+    a#a-1.anchor
+    h1
+      | Welcome to my portfolio page! My name is 
+      em M.Yz
+    p self-training to become a web document(HTML/CSS/JS) writer
+  section#projects
+    a#a-2.anchor
+    h2 These are my projects&darr;
+    .project-tile
+      article#project-1.project
+        h3 Tribute Page
+        iframe.codepen-iframe(scrolling='no' title='Tribute Page' src='https://codepen.io/yasukazu/embed/GRGjvEv?default-tab=html%2Cresult' frameborder='no' loading='lazy' allowtransparency='true' allowfullscreen='true')
+          | See the Pen 
+          a(href='https://codepen.io/yasukazu/pen/GRGjvEv')
+            | Tribute Page
+          |  by Yasukazu Makino (
+          a(href='https://codepen.io/yasukazu') @yasukazu
+          | )
+          |                         on 
+          a(href='https://codepen.io') CodePen
+          | .
+      article#project-2.project
+        h3 Technical Documentation
+        iframe.codepen-iframe(src='https://codesandbox.io/embed/tech-doc-fcp-rcz1pu?fontsize=14&hidenavigation=1&theme=dark' scrolling='no' title='Technical Documentation' allow='accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking' sandbox='allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts')
+        //
+          src="https://yasukazu.github.io/ts-doc/"
+          src="https://codepen.io/yasukazu/embed/QWxKqmw?default-tab=html%2Cresult"
+      article#project-3.project
+        h3 Product Landing Page
+        iframe.codepen-iframe(height='300' style='width: 100%;' scrolling='no' title='Product Landing Page' src='https://codepen.io/yasukazu/embed/rNKMYLJ?default-tab=html%2Cresult' frameborder='no' loading='lazy' allowtransparency='true' allowfullscreen='true')
+          | See the Pen 
+          a(href='https://codepen.io/yasukazu/pen/rNKMYLJ')
+            | Product Landing Page
+          |  by Yasukazu Makino (
+          a(href='https://codepen.io/yasukazu') @yasukazu
+          | )
+          |                         on 
+          a(href='https://codepen.io') CodePen
+          | .
+  section#contact-section
+    a#a-3.anchor
+    h2 Please consider my skill might help your work!
+    .social-icons
+      a#profile-link(href='https://yasukazu.github.io/portfolio/' target='_blank')
+        | M.Yz&apos;s profile as a GitHub Page&rarr;
+        i.fab.fa-github GitHub
+      .badge-base.LI-profile-badge(data-locale='ja_JP' data-size='medium' data-theme='dark' data-type='VERTICAL' data-vanity='yasukazu-makino' data-version='v1')
+        a.badge-base__link.LI-simple-link(href='https://jp.linkedin.com/in/yasukazu-makino/ja?trk=profile-badge')
+          | M.Yz&apos;s profile in
+          | Linked-in&rarr;
+          i.fab.fa-linkedin LinkedIn
+footer
+  | **This is a sample portfolio. All the projects and contact details
+  | shown here are not provided for real use.
+  p
+  p
+    | &copy; Created for
+    a(href='https://www.freecodecamp.com/' target='_blank')
+      | freeCodeCamp 
+      i.fab.fa-free-code-camp
+script(src='https://platform.linkedin.com/badges/js/profile.js' async='' defer='' type='text/javascript')

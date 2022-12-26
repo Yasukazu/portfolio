@@ -1,0 +1,154 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+*,
+::before,
+::after {
+	box-sizing: border-box;
+	background-color: inherit;
+	color: inherit;
+	margin: 0;
+	padding: 0;
+	width: auto;
+	height: auto;
+}
+:root {
+	--header-bgcolor: rgba(199, 0, 57, 0.5);
+	--hdr-h: 4rem;
+	--welcome-bgcolor: black;
+	--welcome-color: white;
+	--projects-blue: #45567d;
+	--main-bgcolor: rgba(35, 35, 35, 1);
+}
+html {
+	scroll-padding-top: var(--hdr-h);
+}
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: var(--main-bgcolor);
+	color: white;
+}
+#header {
+	background-color: var(--header-bgcolor);
+	height: var(--hdr-h);
+	width: 100%;
+}
+main {
+	padding-top: var(--hdr-h);
+	& > section {
+		scroll-margin-top: var(--hdr-h);
+	}
+}
+#navbar {
+	display: flex;
+	flex-direction: row;
+	justify-content: end;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: var(--hdr-h);
+	height: var(--hdr-h);
+	flex-direction: column;
+	height: auto;
+	width: 100vw;
+	gap: 1rem 0;
+	a {
+		font-size: x-large;
+		display: block;
+		color: white;
+		text-decoration: none;
+		text-align: center;
+		margin: 0 1rem;
+	}
+}
+section {
+	height: auto;
+	display: block;
+	&:nth-of-type(2) {
+		background-color: var(--projects-blue);
+	}
+	article {
+		background-color: var(--main-bgcolor);
+	}
+}
+#welcome-section {
+	p {
+		color: red;
+		font-size: x-large;
+		font-weight: 100;
+		font-style: italic;
+		text-align: center;
+	}
+}
+h1,
+h2,
+h3 {
+	font-family: Raleway, sans-serif;
+}
+h1 {
+	font-size: 2em;
+	text-align: center;
+	margin: 0.5em 0 1em 0;
+}
+h2 {
+	font-size: 1.6em;
+	margin: 0.5em 0 1em 0;
+}
+.fixed-item {
+	position: fixed;
+	top: 0;
+	z-index: 999;
+}
+ul {
+	list-style: none;
+}
+article {
+	width: 90%;
+	margin: 0 0 2rem auto;
+	h3 {
+		&:after {
+			content: ":";
+		}
+	}
+}
+.codepen-iframe {
+	display: block;
+	height: 65vh;
+	width: 100%;
+	margin: 2rem 0;
+}
+div {
+	&.social-icons {
+		margin: 0 0 0 1rem;
+	}
+}
+i {
+	&.fab {
+		margin: 0 1em 0 1em;
+	}
+}
+footer {
+	background-color: rgba(205, 205, 205, 1);
+	text-align: right;
+	* {
+		margin: 0.5em 1em;
+	}
+}
+@media {
+	only {
+		screen {
+			and {
+				(max-width {
+					&: {
+						550px) {
+							body {
+        --hdr-h: 20vh;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+#main {
+	padding-top: calc(var(--hdr-h) * 1.6);
+}
