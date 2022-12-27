@@ -74,7 +74,8 @@ header {
 	nav#navbar {
 		display: flex;
 		flex-direction: row;
-		justify-content: end;
+		flex-wrap: wrap;
+		justify-content: start;
 		align-items: center;
 		width: 100%;
 		height: var(--hdr-h);
@@ -171,6 +172,10 @@ footer {
 	* {
 		margin: 0.5em 1em;
 	}
+}
+.fab, .fa-brands {
+	font-family: 'Font Awesom 6 Brands';
+	font-weight: 600;
 }
 @media only screen and (max-width: 550px) {
 	body {

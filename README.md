@@ -1,4 +1,7 @@
-# This is a repository for *Portfolio* project in **Responsive Web Design(New)** course of *freeCodeCamp.org*.
+# This repository is originally for *Portfolio* project in **Responsive Web Design(New)** course of *freeCodeCamp.org*.
+
+## The build result of this repository is publically visible  at <https://yasukazu.github.io/portfolio/>
+
 ## Notice:
-  This repository is just for my personal training as a student of freeCodeCamp.org.
+  This repository is for my personal study of web document coding.
   So, please don't consult any information in this repository.
