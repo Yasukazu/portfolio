@@ -64,7 +64,7 @@ main
 
       article#project-3.project
         h3 Product Landing Page
-          span(lang='ja') 商品宣伝ページ
+          span(lang='ja') 製品紹介ページ
         iframe.codepen-iframe(height='300' style='width: 100%;' scrolling='no' title='Product Landing Page' src='https://codepen.io/yasukazu/embed/rNKMYLJ?default-tab=html%2Cresult' frameborder='no' loading='lazy' allowtransparency='true' allowfullscreen='true')
           | See the Pen 
           a(href='https://codepen.io/yasukazu/pen/rNKMYLJ')
@@ -78,21 +78,26 @@ main
   section#contact-section
     a#a-3.anchor
     h2 Please consider my skill might help your work!
+      span(lang='ja') お仕事のお役に立てることを期待します
     .social-icons
-      a#profile-link(href='https://github.com/yasukazu/portfolio/' target='_blank')
-        | The source code repository of This Page&rarr;
-        i.fa-brands.fa-github GitHub
-      .badge-base.LI-profile-badge(data-locale='ja_JP' data-size='medium' data-theme='dark' data-type='VERTICAL' data-vanity='yasukazu-makino' data-version='v1')
-        a.badge-base__link.LI-simple-link(href='https://jp.linkedin.com/in/yasukazu-makino/ja?trk=profile-badge')
-          | M.Yz&apos;s profile in
-          | Linked-in&rarr;
-          i.fa-brands.fa-linkedin LinkedIn
+      ul
+       li
+        a#profile-link(href='https://github.com/yasukazu/portfolio/' target='_blank' rel='noopener') The source code repository of this Page
+         span(lang='ja') ソースコードのリポジトリ
+         | &rarr;
+         b GitHub
+       li
+        a(href='https://www.freecodecamp.org/japanese/certification/yasukazu-makino/responsive-web-design') The certification of &apos;Responsive Web Design(New)&apos; of 
+         b freeCodeCamp
+         span(lang='ja') フリーコードキャンプの「(新)レスポンシブウェブデザイン」修了証
 footer
-  | **This is a sample portfolio. All the projects and contact details
-  | shown here are not provided for real use.
-  p
-    | Created for
-    a(href='https://www.freecodecamp.com/' target='_blank')
-      | &copy;freeCodeCamp.org 
-      i.fa-brands.fa-free-code-camp
+  h2 **This is a portfolio page 
+    span(lang='ja') これはウェブページ制作技術を提示するための作品一覧ページです
+
+  p Any article in projects here is not provided for real use.
+    span(lang='ja') 各作品はウェブページ制作技術を示すために作られているため，その内容は十分に検証されていない場合があります。
+  p Originally created for a project in &quot;Responsive Web Design(New)&quot; course of
+    span(lang='ja') 元はフリーコードキャンプの「(新)レスポンシブウェブデザイン」コースの課題のために制作されました。
+    a(href='https://www.freecodecamp.com/', target='_blank', rel='noopener')
+      b freeCodeCamp.org
 script(src='https://platform.linkedin.com/badges/js/profile.js' async='' defer='' type='text/javascript')
