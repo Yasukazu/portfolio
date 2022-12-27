@@ -7,6 +7,7 @@ head
   link(rel='preconnect' href='https://fonts.googleapis.com')
   link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
   link(href='https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Noto+Serif+JP&family=Source+Code+Pro&display=swap' rel='stylesheet')
+  link(href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/brands.min.css')
   link(rel='stylesheet' href='https://unpkg.com/destyle.css@3.0.2/destyle.min.css')
   link(rel='stylesheet' href='styles.css')
 header#header.fixed-item
@@ -78,21 +79,20 @@ main
     a#a-3.anchor
     h2 Please consider my skill might help your work!
     .social-icons
-      a#profile-link(href='https://yasukazu.github.io/portfolio/' target='_blank')
-        | M.Yz&apos;s profile as a GitHub Page&rarr;
-        i.fab.fa-github GitHub
+      a#profile-link(href='https://github.com/yasukazu/portfolio/' target='_blank')
+        | The source code repository of This Page&rarr;
+        i.fa-brands.fa-github GitHub
       .badge-base.LI-profile-badge(data-locale='ja_JP' data-size='medium' data-theme='dark' data-type='VERTICAL' data-vanity='yasukazu-makino' data-version='v1')
         a.badge-base__link.LI-simple-link(href='https://jp.linkedin.com/in/yasukazu-makino/ja?trk=profile-badge')
           | M.Yz&apos;s profile in
           | Linked-in&rarr;
-          i.fab.fa-linkedin LinkedIn
+          i.fa-brands.fa-linkedin LinkedIn
 footer
   | **This is a sample portfolio. All the projects and contact details
   | shown here are not provided for real use.
   p
-  p
-    | &copy; Created for
+    | Created for
     a(href='https://www.freecodecamp.com/' target='_blank')
-      | freeCodeCamp 
-      i.fab.fa-free-code-camp
+      | &copy;freeCodeCamp.org 
+      i.fa-brands.fa-free-code-camp
 script(src='https://platform.linkedin.com/badges/js/profile.js' async='' defer='' type='text/javascript')
