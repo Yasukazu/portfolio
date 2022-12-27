@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Noto+Serif+JP&family=Source+Code+Pro&display=swap');
 @import 'https://fonts.googleapis.com/css?family=Lato:400,700';
 *,
 ::before,
@@ -17,40 +18,43 @@
 	--welcome-color: white;
 	--projects-blue: #45567d;
 	--main-bgcolor: rgba(35, 35, 35, 1);
-}
-html {
 	scroll-padding-top: var(--hdr-h);
-}
-body {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Noto Serif JP', serif;
 	background-color: var(--main-bgcolor);
 	color: white;
+	padding: 0.5rem;
 }
-#header {
-	background-color: var(--header-bgcolor);
-	height: var(--hdr-h);
-	width: 100%;
+a {
+	text-decoration: dotted underline blue;
+}		
+a[href^="http"]:after, a[href^="//"]:after {
+	margin-left: 0.2em;
+	font-family: "Font Awesome 5 Free";
+	content: '\2197';
+	font-weight: bold;
+	font-size: smaller;
+	color: #77f;
 }
-main {
-	padding-top: var(--hdr-h);
-	& > section {
-		scroll-margin-top: var(--hdr-h);
+nav a, h1, h2, h3, h4, h5, h6 {
+	font-family: 'Noto Sans JP', sans-serif;
+}
+header {
+	#header {
+		background-color: var(--header-bgcolor);
+		height: var(--hdr-h);
+		width: 100%;
 	}
-}
-#navbar {
-	display: flex;
-	flex-direction: row;
-	justify-content: end;
-	align-items: center;
-	display: flex;
-	flex-direction: row;
-	width: 100%;
-	height: var(--hdr-h);
-	height: var(--hdr-h);
-	flex-direction: column;
-	height: auto;
-	width: 100vw;
-	gap: 1rem 0;
+	nav#navbar {
+		display: flex;
+		flex-direction: row;
+		justify-content: end;
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		height: var(--hdr-h);
+	}
+
 	a {
 		font-size: x-large;
 		display: block;
@@ -60,6 +64,14 @@ main {
 		margin: 0 1rem;
 	}
 }
+
+main {
+	padding-top: var(--hdr-h);
+	& > section {
+		scroll-margin-top: var(--hdr-h);
+	}
+}
+
 section {
 	height: auto;
 	display: block;
@@ -133,22 +145,18 @@ footer {
 		margin: 0.5em 1em;
 	}
 }
-@media {
-	only {
-		screen {
-			and {
-				(max-width {
-					&: {
-						550px) {
-							body {
+@media only screen and (max-width: 550px) {
+	body {
         --hdr-h: 20vh;
-						}
-					}
-				}
-			}
-		}
 	}
-}
-#main {
-	padding-top: calc(var(--hdr-h) * 1.6);
+	#navbar {
+    	height: var(--hdr-h);
+    	flex-direction: column;
+    	height: auto;
+    	width: 100vw;
+    	gap: 1rem 0;
+	}
+	#main {
+		padding-top: calc(var(--hdr-h) * 1.6);
+	}
 }
