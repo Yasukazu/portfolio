@@ -21,15 +21,16 @@
   --main-bgcolor: rgb(82, 81, 81);
 }
 
-body {
+html {
   scroll-padding-top: var(--hdr-h);
   font-family: "Noto Serif JP", serif;
+  font-size: 16px;
   background-color: var(--main-bgcolor);
   color: white;
-  padding: 0.5rem;
+  padding: 0.5em 1em;
+  line-height: normal;
 }
-
-h1, h2, h3, h4, h5, h6 {
+html h1, html h2, html h3, html h4, html h5, html h6 {
   font-family: "Noto Sans JP", sans-serif;
 }
 
@@ -60,10 +61,6 @@ nav a, h1, h2, h3, h4, h5, h6 {
   font-family: "Noto Sans JP", sans-serif;
 }
 
-h2 {
-  line-height: 1.2em;
-}
-
 a {
   text-underline-offset: 0.3ex;
 }
@@ -72,7 +69,7 @@ footer {
   color: #7f007f;
   background-color: #030;
   font-size: 1rem;
-  line-height: 1.2em;
+  line-height: normal;
 }
 footer * {
   margin: 0.5em 1em;
@@ -179,7 +176,8 @@ h1 {
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 1.2rem;
+  line-height: normal;
   margin: 0.5em 0 1em 0;
 }
 
