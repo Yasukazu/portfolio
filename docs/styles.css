@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import "https://unpkg.com/modern-css-reset/dist/reset.min.css";
 @import 'https://fonts.googleapis.com/css?family=Lato:400,700';
 *,
 ::before,
@@ -20,11 +19,18 @@
   --welcome-color: white;
   --projects-blue: #45567d;
   --main-bgcolor: rgb(82, 81, 81);
+}
+
+body {
   scroll-padding-top: var(--hdr-h);
   font-family: "Noto Serif JP", serif;
   background-color: var(--main-bgcolor);
   color: white;
   padding: 0.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 a {
@@ -164,12 +170,6 @@ section h2 {
   font-weight: 100;
   font-style: italic;
   text-align: center;
-}
-
-h1,
-h2,
-h3 {
-  font-family: Raleway, sans-serif;
 }
 
 h1 {
