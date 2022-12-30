@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Noto+Serif+JP&family=Source+Code+Pro&display=swap');
+@import "https://unpkg.com/modern-css-reset/dist/reset.min.css";
 @import 'https://fonts.googleapis.com/css?family=Lato:400,700';
 *,
 ::before,
@@ -34,40 +34,55 @@ a[href^="#"]:after {
 	color: #77f;
 }
 a[href^="http"]:after, a[href^="//"]:after {
-	margin-left: 0.2em;
 	// font-weight: bold;
 	// font-size: smaller;
 	// color: #77f;
 	//content: '↗';
+	background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' fill-rule='evenodd' stroke-width='3' clip-rule='evenodd'%3E%3Cpath d='M14 4h-13v18h20v-11h1v12h-22v-20h14v1zm10 5h-1v-6.293l-11.646 11.647-.708-.708 11.647-11.646h-6.293v-1h8v8z'/%3E%3C/svg%3E");
 	content: '';
+	margin-left: 0.2em;
     display: inline-block;
     width: 0.8em;
     height: 0.8em;
-	// background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%3E%3Cpath%20d%3D%22M14%204h-13v18h20v-11h1v12h-22v-20h14v1zm10%205h-1v-6.293l-11.646%2011.647-.708-.708%2011.647-11.646h-6.293v-1h8v8z%22%2F%3E%3C%2Fsvg%3E');
-	background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' fill-rule='evenodd' stroke-width='3' clip-rule='evenodd'%3E%3Cpath d='M14 4h-13v18h20v-11h1v12h-22v-20h14v1zm10 5h-1v-6.293l-11.646 11.647-.708-.708 11.647-11.646h-6.293v-1h8v8z'/%3E%3C/svg%3E");
-	// background-color: darkgray;
 	background-repeat: no-repeat;
 	background-size: contain;
-background-position: center;
+	background-position: center;
 }
 nav a, h1, h2, h3, h4, h5, h6 {
 	font-family: 'Noto Sans JP', sans-serif;
 }
-footer {
-	h2, p {
-	  color: purple;
-	}
 	h2 {
-	line-height: 1.4em;
-	font-size: 1.2em;
-	}
-  p {
 	line-height: 1.2em;
-	font-size: 1em;
-	span {
-      font-size: smaller;
-    }
-  }
+	}
+	a {
+		text-underline-offset: 0.3ex;
+	}
+footer {
+	  color: #7f007f;
+	background-color: #030;
+	font-size: 1rem;
+	line-height: 1.2em;
+	* {
+		margin: 0.5em 1em;
+		text-align: left;
+	}
+	a, p {
+	font-size: 80%;
+	}
+	a:after {
+	  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg' fill='%23770077' fill-rule='evenodd' stroke-width='3' clip-rule='evenodd'%3E%3Cpath d='M14 4h-13v18h20v-11h1v12h-22v-20h14v1zm10 5h-1v-6.293l-11.646 11.647-.708-.708 11.647-11.646h-6.293v-1h8v8z'/%3E%3C/svg%3E");
+	  content: '';
+	  margin-left: 0.2em;
+	  display: inline-block;
+	  width: 0.8em;
+	  height: 0.8em;
+	  background-repeat: no-repeat;
+	  background-size: contain;
+	  background-position: center;
+	}
+	p {
+		word-break: normal;
+	}
 }
 nav a span {
     font-size: smaller;
@@ -152,12 +167,12 @@ h3 {
 	font-family: Raleway, sans-serif;
 }
 h1 {
-	font-size: 2em;
+	font-size: 1.5rem;
 	text-align: center;
-	margin: 0.5em 0 1em 0;
+	margin: 0.5rem 0 1rem 0;
 }
 h2 {
-	font-size: 1.6em;
+	font-size: 1.2em;
 	margin: 0.5em 0 1em 0;
 }
 .fixed-item {
@@ -196,21 +211,7 @@ i {
 h2 span {
 	font-size: smaller;
 }
-footer {
-	color: black;
-	background-color: rgba(205, 205, 205, 1);
-	text-align: right;
-	* {
-		margin: 0.5em 1em;
-	}
-	h2 {
-		font-size: 1.2rem;
-		text-align: left;
-	}
-	p {
-		word-break: normal;
-	}
-}
+
 ul > li {
 	list-style: disc;
 }
