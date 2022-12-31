@@ -36,6 +36,10 @@ html h1, html h2, html h3, html h4, html h5, html h6 {
 
 a {
   text-decoration: dashed underline blue;
+  text-underline-offset: 0.3ex;
+}
+a b {
+  margin: 0 1em;
 }
 
 a[href^="#"]:after {
@@ -59,10 +63,6 @@ a[href^=http]:after, a[href^="//"]:after {
 
 nav a, h1, h2, h3, h4, h5, h6 {
   font-family: "Noto Sans JP", sans-serif;
-}
-
-a {
-  text-underline-offset: 0.3ex;
 }
 
 footer {
