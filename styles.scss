@@ -33,13 +33,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 a {
 	text-decoration: dashed underline blue;
+	text-underline-offset: 0.3ex;
+	b {
+		margin: 0 1em;
+	}
 }		
+
 a[href^="#"]:after {
 	content: '↘';
 	font-weight: bold;
 	font-size: smaller;
 	color: #77f;
 }
+
 a[href^="http"]:after, a[href^="//"]:after {
 	// font-weight: bold;
 	// font-size: smaller;
@@ -58,10 +64,6 @@ a[href^="http"]:after, a[href^="//"]:after {
 
 nav a, h1, h2, h3, h4, h5, h6 {
 	font-family: 'Noto Sans JP', sans-serif;
-}
-
-a {
-	text-underline-offset: 0.3ex;
 }
 
 footer {
