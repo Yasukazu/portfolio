@@ -98,11 +98,11 @@ nav a span {
 }
 
 span[lang]:before {
-  content: "(";
+  content: " (";
 }
 
 span[lang]:after {
-  content: ")";
+  content: ") ";
 }
 
 article h3 span {
@@ -222,9 +222,16 @@ ul > li {
   list-style: disc;
 }
 
-.fab, .fa-brands {
-  font-family: "Font Awesom 6 Brands";
-  font-weight: 600;
+i.fa-brands {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  border: medium dashed pink;
+  font-size: larger;
+}
+
+li b {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 
 @media only screen and (max-width: 550px) {
