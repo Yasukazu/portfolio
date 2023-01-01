@@ -1,99 +1,100 @@
 - var author = "MKN,Yskz";
-doctype html(lang="en")
-include head.pug
-header#header.fixed-item
-  nav#navbar
-    a(href='#') Home
-      span(lang='ja') ページトップ
-    a(href='#a-2') Projects
-      span(lang='ja') 課題
-    a(href='#a-3') Contact
-      span(lang='ja') 連絡先
-main
-  section#welcome-section
-    a#a-1.anchor
-    h1
-      | Welcome to my portfolio page of 
-      em #{author}
-      br
-      span(lang='ja') 私のポートフォリオ(技能紹介)ページへようこそ
-    h2 Self-training to become a web document(HTML/CSS/JS) coder
-      br
-      span(lang='ja') ホームページ文書作成業を目指して独学中です
+doctype html
+html(lang="en")
+  include head.pug
+  body
+    header#header.fixed-item
+      nav#navbar
+        a(href='#') Home
+          span(lang='ja') ページトップ
+        a(href='#a-2') Projects
+          span(lang='ja') 課題
+        a(href='#a-3') Contact
+          span(lang='ja') 連絡先
+    main
+      section#welcome-section
+        a#a-1.anchor
+        h1
+          | Welcome to my portfolio page of 
+          em #{author}
+          br
+          span(lang='ja') 私のポートフォリオ(技能紹介)ページへようこそ
+        h2 Self-training to become a web document(HTML/CSS/JS) coder
+          br
+          span(lang='ja') ホームページ文書作成業を目指して独学中です
 
-  section#projects
-    a#a-2.anchor
-    h2 These are my projects
-      span(lang='ja') 以下が私の制作物です&darr;
-    .project-tile
-      article#project-1.project
-        h3 Tribute Page
-          span(lang='ja') 偉人の業績紹介ページ
-        iframe.codepen-iframe(scrolling='no' title='Tribute Page' src='https://codepen.io/yasukazu/embed/GRGjvEv?default-tab=html%2Cresult' frameborder='no' loading='lazy' allowtransparency='true' allowfullscreen='true')
-          | See the Pen 
-          a(href='https://codepen.io/yasukazu/pen/GRGjvEv')
-            | Tribute Page
-          |  by Yasukazu Makino (
-          a(href='https://codepen.io/yasukazu') @yasukazu
-          | )
-          |                         on 
-          a(href='https://codepen.io') CodePen
-          | .
-      article#project-2.project
-        h3 Technical Documentation
-          span(lang='ja') 技術説明文書
-        iframe.codepen-iframe(scrolling='no' title='Technical Documentation' src='https://codepen.io/yasukazu/embed/QWxKqmw?default-tab=html%2Cresult' frameborder='no' loading='lazy' allowtransparency='true' allowfullscreen='true')
-          | See the Pen 
-          a(href='https://codepen.io/yasukazu/pen/QWxKqmw')
-           | Technical Documentation
-          |  by Yasukazu Makino (
-          a(href='https://codepen.io/yasukazu') @yasukazu
-          | )
-          |   on 
-          a(href='https://codepen.io') CodePen
-          | .
+      section#projects
+        a#a-2.anchor
+        h2 These are my projects
+          span(lang='ja') 以下が私の制作物です&darr;
+        .project-tile
+          article#project-1.project
+            h3 Tribute Page
+              span(lang='ja') 偉人の業績紹介ページ
+            iframe.codepen-iframe(scrolling='no' title='Tribute Page' src='https://codepen.io/yasukazu/embed/GRGjvEv?default-tab=html%2Cresult' frameborder='no' loading='lazy' allowtransparency='true' allowfullscreen='true')
+              | See the Pen 
+              a(href='https://codepen.io/yasukazu/pen/GRGjvEv')
+                | Tribute Page
+              |  by Yasukazu Makino (
+              a(href='https://codepen.io/yasukazu') @yasukazu
+              | )
+              |                         on 
+              a(href='https://codepen.io') CodePen
+              | .
+          article#project-2.project
+            h3 Technical Documentation
+              span(lang='ja') 技術説明文書
+            iframe.codepen-iframe(scrolling='no' title='Technical Documentation' src='https://codepen.io/yasukazu/embed/QWxKqmw?default-tab=html%2Cresult' frameborder='no' loading='lazy' allowtransparency='true' allowfullscreen='true')
+              | See the Pen 
+              a(href='https://codepen.io/yasukazu/pen/QWxKqmw')
+              | Technical Documentation
+              |  by Yasukazu Makino (
+              a(href='https://codepen.io/yasukazu') @yasukazu
+              | )
+              |   on 
+              a(href='https://codepen.io') CodePen
+              | .
 
-      article#project-3.project
-        h3 Product Landing Page
-          span(lang='ja') 製品紹介ページ
-        iframe.codepen-iframe(height='300' style='width: 100%;' scrolling='no' title='Product Landing Page' src='https://codepen.io/yasukazu/embed/rNKMYLJ?default-tab=html%2Cresult' frameborder='no' loading='lazy' allowtransparency='true' allowfullscreen='true')
-          | See the Pen 
-          a(href='https://codepen.io/yasukazu/pen/rNKMYLJ')
-            | Product Landing Page
-          |  by Yasukazu Makino (
-          a(href='https://codepen.io/yasukazu') @yasukazu
-          | )
-          |                         on 
-          a(href='https://codepen.io') CodePen
-          | .
-  section#contact-section
-    a#a-3.anchor
-    h2 Please consider my skill might help your work!
-      span(lang='ja') お仕事のお役に立てることを期待します
-    .social-icons
-      ul
-       li
-        a#profile-link(href='https://github.com/yasukazu/portfolio/' target='_blank' rel='noopener') The source code repository of this Page
-         span(lang='ja') ソースコードのリポジトリ
-         | &rarr;
-         b GitHub
-       li
-        a(href='https://www.freecodecamp.org/japanese/certification/yasukazu-makino/responsive-web-design') The certification of &apos;Responsive Web Design(New)&apos; of 
-         b freeCodeCamp
-         span(lang='ja') フリーコードキャンプの「(新)レスポンシブウェブデザイン」修了証
-       li 
-        a(href='https://www.linkedin.com/in/yasukazu-makino/')
-         b LinkedIn
-         | profile page #[small You can see my profile if you sign-in to LinkedIn]
-         span(lang='ja') リンクトインのプロファイルページ #[small リンクトインにサインインすると私のプロフィールがご覧になれます]
-footer   
-  h2 **This is a portfolio page 
-    span(lang='ja') これはウェブページ制作技術を提示するための作品一覧ページです
-
-  p Any article in projects here is not provided for real use.
-    span(lang='ja') 各作品はウェブページ制作技術を示すために作られているため，その内容は十分に検証されていない場合があります。
-  p Originally created for a project in &quot;Responsive Web Design(New)&quot; course of
-    span(lang='ja') 元はフリーコードキャンプの「(新)レスポンシブウェブデザイン」コースの課題のために制作されました。
-    a(href='https://www.freecodecamp.com/', target='_blank', rel='noopener')
-      b freeCodeCamp.org
-script(src='https://platform.linkedin.com/badges/js/profile.js' async='' defer='' type='text/javascript')
+          article#project-3.project
+            h3 Product Landing Page
+              span(lang='ja') 製品紹介ページ
+            iframe.codepen-iframe(height='300' style='width: 100%;' scrolling='no' title='Product Landing Page' src='https://codepen.io/yasukazu/embed/rNKMYLJ?default-tab=html%2Cresult' frameborder='no' loading='lazy' allowtransparency='true' allowfullscreen='true')
+              | See the Pen 
+              a(href='https://codepen.io/yasukazu/pen/rNKMYLJ')
+                | Product Landing Page
+              |  by Yasukazu Makino (
+              a(href='https://codepen.io/yasukazu') @yasukazu
+              | )
+              |                         on 
+              a(href='https://codepen.io') CodePen
+              | .
+      section#contact-section
+        a#a-3.anchor
+        h2 Please consider my skill might help your work!
+          span(lang='ja') お仕事のお役に立てることを期待します
+        .social-icons
+          ul
+          li
+            a#profile-link(href='https://github.com/yasukazu/portfolio/' target='_blank' rel='noopener') The source code repository of this Page
+            span(lang='ja') ソースコードのリポジトリ
+            | &rarr;
+            b GitHub
+          li
+            a(href='https://www.freecodecamp.org/japanese/certification/yasukazu-makino/responsive-web-design') The certification of &apos;Responsive Web Design(New)&apos; of 
+            b freeCodeCamp
+            span(lang='ja') フリーコードキャンプの「(新)レスポンシブウェブデザイン」修了証
+          li 
+              address
+                a(href='https://www.linkedin.com/in/yasukazu-makino/')
+                b LinkedIn
+                | profile page #[small You can see my profile if you sign-in to LinkedIn]
+                span(lang='ja') リンクトインのプロファイルページ #[small リンクトインにサインインすると私のプロフィールがご覧になれます]
+    footer   
+      h2 **This is a portfolio page to show web page skills
+        span(lang='ja') これはウェブページ制作技能を提示するための制作物一覧ページです
+      p Every article in projects here is not provided for real knowlege base.
+        span(lang='ja') 各制作物はウェブページ制作技能を示すために作られているため，その内容の適切さは不十分である可能性があります。
+      p Originally created for a project in &quot;Responsive Web Design(New)&quot; course of
+        span(lang='ja') 元はフリーコードキャンプの「(新)レスポンシブウェブデザイン」コースの課題のために制作されました。
+        a(href='https://www.freecodecamp.com/', target='_blank', rel='noopener')
+          b freeCodeCamp.org
