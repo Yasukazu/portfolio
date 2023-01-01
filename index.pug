@@ -75,20 +75,25 @@ html(lang="en")
         .social-icons
           ul
             li
-              a#profile-link(href='https://github.com/yasukazu/portfolio/' target='_blank' rel='noopener') The source code repository of this Page
-              span(lang='ja') ソースコードのリポジトリ
-              | &rarr;
+              a.profile-link(href='https://github.com/yasukazu/portfolio/' target='_blank' rel='noopener')
+                | The source code repository of this Page
+                span(lang='ja') ソースコードのリポジトリ
               b GitHub
+              i(class="fa-brands fa-github")
             li
-              a(href='https://www.freecodecamp.org/japanese/certification/yasukazu-makino/responsive-web-design') The certification of &apos;Responsive Web Design(New)&apos; of 
+              a.profile-link(href='https://www.freecodecamp.org/japanese/certification/yasukazu-makino/responsive-web-design')
+                | The certification of &apos;Responsive Web Design(New)&apos;
+                span(lang='ja') フリーコードキャンプの「(新)レスポンシブウェブデザイン」修了証
               b freeCodeCamp
-              span(lang='ja') フリーコードキャンプの「(新)レスポンシブウェブデザイン」修了証
+              i(class="fa-brands fa-free-code-camp")
             li 
               address
-                a(href='https://www.linkedin.com/in/yasukazu-makino/')
-                b LinkedIn
-                | profile page #[small You can see my profile if you sign-in to LinkedIn]
-                span(lang='ja') リンクトインのプロファイルページ #[small リンクトインにサインインすると私のプロフィールがご覧になれます]
+                a.profile-link(href='https://www.linkedin.com/in/yasukazu-makino/')
+                  | profile page #[small You can see my profile if you sign-in to LinkedIn]
+                  span(lang='ja') リンクトインのプロファイルページ #[small リンクトインにサインインすると私のプロフィールがご覧になれます]
+              b LinkedIn
+              i(class="fa-brands fa-linkedin")
+
     footer   
       h2 **This is a portfolio page to show web page skills
         span(lang='ja') これはウェブページ制作技能を提示するための制作物一覧ページです
@@ -98,3 +103,6 @@ html(lang="en")
         span(lang='ja') 元はフリーコードキャンプの「(新)レスポンシブウェブデザイン」コースの課題のために制作されました。
         a(href='https://www.freecodecamp.com/', target='_blank', rel='noopener')
           b freeCodeCamp.org
+    script(defer='' src='./fontawesome-6/js/brands.js')
+    script(defer='' src='./fontawesome-6/js/solid.js')
+    script(defer='' src='./fontawesome-6/js/fontawesome.js')
