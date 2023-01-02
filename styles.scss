@@ -46,28 +46,38 @@ a[href^="#"]:after {
 	color: #77f;
 }
 
+/*
 a[href^="http"]:after, a[href^="//"]:after {
 	// font-weight: bold;
 	// font-size: smaller;
 	// color: #77f;
 	//content: '↗';
-	background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' fill-rule='evenodd' stroke-width='3' clip-rule='evenodd'%3E%3Cpath d='M14 4h-13v18h20v-11h1v12h-22v-20h14v1zm10 5h-1v-6.293l-11.646 11.647-.708-.708 11.647-11.646h-6.293v-1h8v8z'/%3E%3C/svg%3E");
-	content: '';
 	margin-left: 0.2em;
     display: inline-block;
     width: 0.8em;
     height: 0.8em;
+	content: '';
+	background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' fill-rule='evenodd' stroke-width='3' clip-rule='evenodd'%3E%3Cpath d='M14 4h-13v18h20v-11h1v12h-22v-20h14v1zm10 5h-1v-6.293l-11.646 11.647-.708-.708 11.647-11.646h-6.293v-1h8v8z'/%3E%3C/svg%3E");
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
-}
+}*/
 
 nav a, h1, h2, h3, h4, h5, h6 {
 	font-family: 'Noto Sans JP', sans-serif;
 }
 
+ul.social-icons {
+	padding-left: 1em;
+   li {
+	  padding-left: 0em;
+	  margin-left: 0em;
+   }
+}
+
+
 footer {
-	  color: #f0f;
+	color: #f0f;
 	background-color: #030;
 	font-size: 1rem;
 	line-height: normal;//1.2em;
@@ -75,9 +85,20 @@ footer {
 		margin: 0.5em 1em;
 		text-align: left;
 	}
-	a, p {
-	font-size: 80%;
+	li {
+	  font-size: 1em;
 	}
+	a {
+		text-decoration: dashed underline #77f;
+		font-size: 1em;
+		margin-left: 0em;
+		margin-right: 0em;
+	}
+    svg {
+		margin-left: 0em;
+		margin-right: 0em;
+	}
+	/*
 	a:after {
 	  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg' fill='%23770077' fill-rule='evenodd' stroke-width='3' clip-rule='evenodd'%3E%3Cpath d='M14 4h-13v18h20v-11h1v12h-22v-20h14v1zm10 5h-1v-6.293l-11.646 11.647-.708-.708 11.647-11.646h-6.293v-1h8v8z'/%3E%3C/svg%3E");
 	  content: '';
@@ -88,7 +109,7 @@ footer {
 	  background-repeat: no-repeat;
 	  background-size: contain;
 	  background-position: center;
-	}
+	} */
 	p {
 		word-break: normal;
 	}
@@ -185,9 +206,7 @@ h2 {
 	top: 0;
 	z-index: 999;
 }
-ul {
-	list-style: none;
-}
+
 article {
 	width: 90%;
 	margin: 0 0 2rem auto;
@@ -230,6 +249,14 @@ ul.social-icons b {
 	margin-left: 0.5em;
 	margin-right: 0.5em;
 }
+
+svg.svg-24 {
+	width: 1.2em;
+	height: 1.2em;
+	display: inline-block;
+	vertical-align: middle;
+}
+
 @media only screen and (max-width: 550px) {
 	body {
         --hdr-h: 20vh;

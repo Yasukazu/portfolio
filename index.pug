@@ -1,4 +1,5 @@
 - var author = "MKN,Yskz";
+include mixin.pug
 doctype html
 html(lang="en")
   include head.pug
@@ -96,12 +97,17 @@ html(lang="en")
     footer   
       h2 **This is a portfolio page to show web page skills
         span(lang='ja') これはウェブページ制作技能を提示するための制作物一覧ページです
-      p Every article in projects here is not provided for real knowlege base.
-        span(lang='ja') 各制作物はウェブページ制作技能を示すために作られているため，その内容の適切さは不十分である可能性があります。
-      p Originally created for a project in &quot;Responsive Web Design(New)&quot; course of
-        span(lang='ja') 元はフリーコードキャンプの「(新)レスポンシブウェブデザイン」コースの課題のために制作されました。
-        a(href='https://www.freecodecamp.com/', target='_blank', rel='noopener')
-          b freeCodeCamp.org
+      ul.notices
+        li
+          | Every article in projects here is not provided for real knowlege base.
+          span(lang='ja') 各制作物はウェブページ制作技能を示すために作られているため，その内容の適切さは不十分である可能性があります。
+        li
+          | Originally created for a project in &quot;Responsive Web Design(New)&quot; course of
+          span(lang='ja') 元はフリーコードキャンプの「(新)レスポンシブウェブデザイン」コースの課題のために制作されました。
+          a(href='https://www.freecodecamp.com/', target='_blank', rel='noopener')
+            b freeCodeCamp.org
+            +external_link_svg()(class='svg-24' stroke='#7ff')
+
     script(defer='' src='./fontawesome-6/js/brands.js')
     script(defer='' src='./fontawesome-6/js/solid.js')
     script(defer='' src='./fontawesome-6/js/fontawesome.js')
