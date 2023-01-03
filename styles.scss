@@ -253,18 +253,24 @@ ul.social-icons b {
 	margin-right: 0.5em;
 }
 
-svg.svg-24 {
-	width: 1.2em;
-	height: 1.2em;
-	display: inline-block;
-	vertical-align: middle;
-}
 
-svg.svg-social {
-	width: 1em;
-	height: 1em;
+svg {
 	display: inline-block;
-	vertical-align: baseline;
+	.svg-footer {
+		width: 1.2em;
+		height: 1.2em;
+		vertical-align: middle;
+	}
+	.svg-footer-head {
+		width: 1.2em;
+		height: 1.2em;
+		vertical-align: middle;	
+	}
+	.svg-social {
+		width: 1em;
+		height: 1em;
+		vertical-align: baseline;
+	}
 }
 
 /* ul.social-icons a:after {
