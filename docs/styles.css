@@ -256,17 +256,22 @@ ul.social-icons b {
   margin-right: 0.5em;
 }
 
-svg.svg-24 {
+svg {
+  display: inline-block;
+}
+.svg-footer {
   width: 1.2em;
   height: 1.2em;
-  display: inline-block;
   vertical-align: middle;
 }
-
-svg.svg-social {
+.svg-footer-head {
+  width: 1.2em;
+  height: 1.2em;
+  vertical-align: middle;
+}
+.svg-social {
   width: 1em;
   height: 1em;
-  display: inline-block;
   vertical-align: baseline;
 }
 
