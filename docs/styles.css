@@ -259,17 +259,17 @@ ul.social-icons b {
 svg {
   display: inline-block;
 }
-svg .svg-footer {
+.svg-footer {
   width: 1.2em;
   height: 1.2em;
   vertical-align: middle;
 }
-svg .svg-footer-head {
+.svg-footer-head {
   width: 1.2em;
   height: 1.2em;
   vertical-align: middle;
 }
-svg .svg-social {
+.svg-social {
   width: 1em;
   height: 1em;
   vertical-align: baseline;

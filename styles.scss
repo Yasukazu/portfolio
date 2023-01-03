@@ -256,21 +256,20 @@ ul.social-icons b {
 
 svg {
 	display: inline-block;
-	.svg-footer {
-		width: 1.2em;
-		height: 1.2em;
-		vertical-align: middle;
-	}
-	.svg-footer-head {
-		width: 1.2em;
-		height: 1.2em;
-		vertical-align: middle;	
-	}
-	.svg-social {
-		width: 1em;
-		height: 1em;
-		vertical-align: baseline;
-	}
+	vertical-align: middle;
+}
+.svg-footer {
+	width: 1.2em;
+	height: 1.2em;
+}
+.svg-footer-head {
+	width: 1.2em;
+	height: 1.2em;
+}
+.svg-social {
+	width: 1em;
+	height: 1em;
+	vertical-align: baseline;
 }
 
 /* ul.social-icons a:after {
