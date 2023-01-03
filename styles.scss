@@ -1,4 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css';
 *,
 ::before,
 ::after {
@@ -36,6 +37,7 @@ a {
 	text-underline-offset: 0.3ex;
 	b {
 		margin: 0 1em;
+		text-underline-offset: 0.5ex;
 	}
 }		
 
@@ -90,6 +92,7 @@ footer {
 	}
 	a {
 		text-decoration: dashed underline #77f;
+		text-underline-offset: 0.5ex;
 		font-size: 1em;
 		margin-left: 0em;
 		margin-right: 0em;
