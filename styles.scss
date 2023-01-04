@@ -89,16 +89,25 @@ footer {
 	li {
 	  font-size: 1em;
 	}
+    svg {
+		margin-left: 0em;
+		margin-right: 0em;
+	}
 	a {
 		text-decoration: dashed underline #77f;
 		text-underline-offset: 0.5ex;
 		font-size: 1em;
 		margin-left: 0em;
-		margin-right: 0em;
-	}
-    svg {
-		margin-left: 0em;
-		margin-right: 0em;
+		margin-right: 0.3em;
+	/*
+	&:after {
+    	display: inline-block;
+    	margin-left: 0.2em;
+    	content: '';
+    	background: url("data:image/svg+xml;%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f0f' fill-rule='evenodd' stroke-width='3' clip-rule='evenodd'%3E%3Cpath d='M14 4h-13v18h20v-11h1v12h-22v-20h14v1zm10 5h-1v-6.293l-11.646 11.647-.708-.708 11.647-11.646h-6.293v-1h8v8z'/%3E%3C/svg%3E") no-repeat center center;
+    	width: 1em;
+    	height: 1em;
+	} */
 	}
 	/*
 	a:after {
@@ -253,32 +262,35 @@ ul.social-icons b {
 	margin-right: 0.5em;
 }
 
+h2.warn:before {
+	display: inline-block;
+	margin-right: 0.2em;
+	content: '';
+	background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24"><path fill="%23f07" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.31 7.526c-.099-.807.528-1.526 1.348-1.526.771 0 1.377.676 1.28 1.451l-.757 6.053c-.035.283-.276.496-.561.496s-.526-.213-.562-.496l-.748-5.978zm1.31 10.724c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25z" /></svg>') no-repeat center center;
+	width: 1.2em;
+	height: 1.2em;
+}
 
 svg {
 	display: inline-block;
 	vertical-align: middle;
-}
-.svg-footer {
-	width: 1.2em;
-	height: 1.2em;
-}
-.svg-footer-head {
-	width: 1.2em;
-	height: 1.2em;
-}
-.svg-social {
-	width: 1em;
-	height: 1em;
-	vertical-align: baseline;
-}
 
+    &.svg-footer {
+    	width: 1.2em;
+    	height: 1.2em;
+    }
+    &.svg-footer-head {
+    	width: 1.2em;
+    	height: 1.2em;
+    }
+    &.svg-social {
+    	width: 1em;
+    	height: 1em;
+    	vertical-align: baseline;
+    }
+}
 /* ul.social-icons a:after {
-	content: '';
 	background-image: url("data:image/svg+xml,%3Csvg class='svg-24' stroke='%237ff' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' clip-rule='evenodd'%3E%3Cpath d='M14 4h-13v18h20v-11h1v12h-22v-20h14v1zm10 5h-1v-6.293l-11.646 11.647-.708-.708 11.647-11.646h-6.293v-1h8v8z'%3E%3C/path%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-
 } */
 
 @media only screen and (max-width: 550px) {
