@@ -19,7 +19,13 @@
 	--projects-blue: #45567d;
 	--main-bgcolor: rgb(82, 81, 81);
 }
+html, body {
+	height: 100%;
+}
 body {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
 	scroll-padding-top: var(--hdr-h);
 	font-family: 'Noto Serif JP', serif;
 	font-size: 16px;
@@ -31,6 +37,15 @@ body {
 		font-family: 'Noto Sans JP', sans-serif;
 	}
 }
+header, footer {
+	flex: 0 0 auto;
+}
+main {
+	flex: 1 1 auto;
+	position: relative;
+	overflow-y: auto;
+}
+
 a {
 	text-decoration: dashed underline blue;
 	text-underline-offset: 0.3ex;
@@ -124,6 +139,12 @@ footer {
 	p {
 		word-break: normal;
 	}
+	summary {
+		opacity: 0.8;
+	}
+	summary:hover {
+		opacity: 1;
+	}
 }
 nav a span {
     font-size: smaller;
@@ -163,6 +184,7 @@ header {
 
 	a {
 		background-color: #f77;
+		opacity: 0.8;
 		border-radius: 0.3em;
 		box-shadow: 5px 10px #1e1e1e;
 		font-size: x-large;
@@ -170,6 +192,9 @@ header {
 		color: white;
 		text-align: center;
 		margin: 0 1rem;
+	}
+	a:hover {
+		opacity: 1;
 	}
 }
 
@@ -212,12 +237,13 @@ h2 {
 	line-height: normal;//1.6;
 	margin: 0.5em 0 1em 0;
 }
+/*
 .fixed-item {
-	position: fixed;
+	position: sticky;
 	top: 0;
 	z-index: 999;
 }
-
+*/
 article {
 	width: 90%;
 	margin: 0 0 2rem auto;
