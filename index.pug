@@ -9,8 +9,8 @@ html(lang="en")
         a(href='#') Home
           span(lang='ja') ページトップ
         a(href='#a-2') Projects
-          span(lang='ja') 課題
-        a(href='#a-3') Contact
+          span(lang='ja') 制作課題一覧
+        a(href='#a-3') Contacts
           span(lang='ja') 連絡先
     main
       section#welcome-section
@@ -78,26 +78,24 @@ html(lang="en")
               a.profile-link(href='https://github.com/yasukazu/portfolio/' target='_blank' rel='noopener')
                 | The source code repository of this Page
                 span(lang='ja') ソースコードのリポジトリ
-                | @
-                b GitHub
                 i(class="fa-brands fa-github")
+                b GitHub
                 +external_link_svg()(class='svg-social' stroke='#ddf')
             li
               a.profile-link(href='https://www.freecodecamp.org/japanese/certification/yasukazu-makino/responsive-web-design')
                 | The certification of &apos;New Responsive Web Design(acquired at #[time(datetime='2022-11-06') 2022 Nov 6])&apos;
                 span(lang='ja') フリーコードキャンプの「(新)レスポンシブウェブデザイン」( #[time(datetime='2022-11-06') 2022年11月6日]取得)修了証
-                | @
-                b freeCodeCamp
                 i(class="fa-brands fa-free-code-camp")
+                b freeCodeCamp
+                +external_link_svg()(class='svg-social' stroke='#ddf')
 
             li 
               address
                 a.profile-link(href='https://www.linkedin.com/in/yasukazu-makino/')
                   | profile page #[small You can see my profile if you sign-in to LinkedIn]
                   span(lang='ja') リンクトインのプロファイルページ #[small リンクトインにサインインすると私のプロフィールがご覧になれます]
-                  | @
-                  b LinkedIn
                   i(class="fa-brands fa-linkedin")
+                  b LinkedIn
                   +external_link_svg()(class='svg-social' stroke='#ddf')
 
     footer   
