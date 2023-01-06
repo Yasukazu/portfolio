@@ -43,7 +43,8 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 }
 
 header, footer {
-  flex: 0 0 auto;
+  flex: 1 0 auto;
+  overflow-y: auto;
 }
 
 main {
@@ -144,7 +145,6 @@ footer a {
 footer p {
   word-break: normal;
 }
-
 footer summary {
   opacity: 0.8;
 }
@@ -199,7 +199,6 @@ header a {
   text-align: center;
   margin: 0 1rem;
 }
-
 header a:hover {
   opacity: 1;
 }
@@ -245,6 +244,13 @@ h2 {
   margin: 0.5em 0 1em 0;
 }
 
+/*
+.fixed-item {
+	position: sticky;
+	top: 0;
+	z-index: 999;
+}
+*/
 article {
   width: 90%;
   margin: 0 0 2rem auto;
