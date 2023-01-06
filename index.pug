@@ -1,4 +1,4 @@
-- var author = "MKN,Yskz";
+- var author = "MKN.Yskz";
 include mixin.pug
 doctype html
 html(lang="en")
@@ -18,10 +18,8 @@ html(lang="en")
         h1
           | Welcome to my portfolio page of 
           em #{author}
-          br
           span(lang='ja') 私のポートフォリオ(技能紹介)ページへようこそ
         h2 Self-training to become a web document(HTML/CSS/JS) coder
-          br
           span(lang='ja') ホームページ文書作成業を目指して独学中です
 
       section#projects
@@ -99,7 +97,7 @@ html(lang="en")
                   +external_link_svg()(class='svg-social' stroke='#ddf')
 
     footer   
-      h2.warn
+      h5.warn
         | **This is a portfolio page to show web page skills
         span(lang='ja') これはウェブページ制作技能を提示するための制作物一覧ページです
       details
