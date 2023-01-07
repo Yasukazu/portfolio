@@ -34,6 +34,7 @@ body {
   color: white;
   padding: 0.5em 1em;
   line-height: normal;
+  padding-bottom: 0.5rem;
 }
 body h1, body h2, body h3, body h4, body h5, body h6 {
   font-family: "Noto Sans JP", sans-serif;
@@ -52,6 +53,7 @@ footer {
   width: 100%;
   overflow-y: auto;
   min-height: 4rem;
+  padding-bottom: 0.5rem;
 }
 footer * {
   font-size: 0.7rem;
