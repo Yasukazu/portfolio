@@ -3,8 +3,8 @@ include mixin.pug
 doctype html
 html(lang="en")
   include head.pug
-  body
-    header#header.fixed-item
+  body.grid-contain
+    header#header.grid-top
       nav#navbar
         a(href='#a-1') Home
           span(lang='ja') ページトップ
@@ -12,7 +12,7 @@ html(lang="en")
           span(lang='ja') 制作課題一覧
         a(href='#a-3') Contacts
           span(lang='ja') 連絡先
-    main
+    main.grid-center
       section#welcome-section
         a#a-1.anchor
         h1
@@ -96,7 +96,7 @@ html(lang="en")
                   b LinkedIn
                   +external_link_svg()(class='svg-social' stroke='#ddf')
 
-    footer   
+    footer.grid-bottom   
       h5.warn
         | **This is a portfolio page to show web page skills
         span(lang='ja') これはウェブページ制作技能を提示するための制作物一覧ページです
