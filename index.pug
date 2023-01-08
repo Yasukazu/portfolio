@@ -73,7 +73,7 @@ html(lang="en")
           span(lang='ja') お仕事のお役に立てることを期待します
         fieldset    
           legend Please use this form to send mail to this webpage owner #[span(lang='ja') このウェブページの持ち主にメールを送るにはこのフォームをご利用ください]
-          form(action='mailto:mail@yskz.dev' method='post' enctype='textplain')
+          form(action="https://formspree.io/f/mgebenqq" method="POST")
             | Your name 
             span(lang='ja') あなたのお名前
             | :
@@ -87,7 +87,7 @@ html(lang="en")
             | Text 
             span(lang='ja') 本文
             br
-            input(type='text' name='content' size='100')
+            textarea(name='message' cols='100' rows='4')
             input(type='submit' name='submit' value='Submit / 送信')
         ul.social-icons
             li
