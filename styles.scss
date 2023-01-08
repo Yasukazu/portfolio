@@ -329,10 +329,10 @@ svg {
 }
 .grid-contain {
 	display: grid;
-    grid-template-rows: 
-	  3rem
-	  1fr
-	  3rem; // heights
+	/* grid-template-rows: 3rem 1fr 3rem;  */
+	grid-auto-rows: fit-content
+	 				auto 
+	 				fit-content;
     grid-template-columns: 1fr; // width
 	grid-template-areas:
 		"top"
