@@ -12,8 +12,8 @@
 ## Used libraries:
 <dl>
   <dt>
-    <a href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'>
-    Normalize CSS 8.0</a>
+    Normalize CSS
   <dd>Equalize rendering between browsers
+  <dd><a href='https://github.com/Yasukazu/portfolio/wiki/Normalize.css'>Normalize css wiki</a>
 </dl>
 </footer>
