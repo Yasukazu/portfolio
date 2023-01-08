@@ -160,11 +160,12 @@ article h3 span:after {
   content: ") ";
 }
 
-header#header {
+header {
   background-color: var(--header-bgcolor);
   width: 100%;
 }
-header nav#navbar {
+header nav {
+  padding: 0.5em;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -172,18 +173,22 @@ header nav#navbar {
   align-items: center;
   width: 100%;
 }
-header a {
+header nav a {
+  padding: 0.2em 0.3em;
+  width: auto;
+  height: auto;
   background-color: #f77;
   opacity: 0.8;
   border-radius: 0.3em;
-  box-shadow: 5px 10px #1e1e1e;
+  box-shadow: 0.3em 0.3em 0.3em #1e1e1e;
+  margin: 0.3em 0.3em;
   font-size: 1rem;
   display: block;
   color: white;
   text-align: center;
   margin: 0 1rem;
 }
-header a:hover {
+header nav a:hover {
   opacity: 1;
 }
 
@@ -199,6 +204,27 @@ section article {
 }
 section h2 {
   font-size: 1.2rem;
+}
+section form {
+  padding: 1em;
+}
+section form input, section form textarea {
+  background-color: white;
+  color: black;
+  padding: 0.3em;
+}
+section form input[type=submit] {
+  color: yellow;
+  border: none;
+  background-color: green;
+  opacity: 0.8;
+  border-radius: 0.3em;
+  box-shadow: 0.3em 0.3em 0.3em #1e1e1e;
+  margin: 0.5em 1em;
+  padding: 0.5em 1em;
+}
+section form input[type=submit]:hover {
+  opacity: 1;
 }
 
 #welcome-section p {
@@ -221,13 +247,6 @@ h2 {
   margin: 0.5em 0 1em 0;
 }
 
-/*
-.fixed-item {
-	position: sticky;
-	top: 0;
-	z-index: 999;
-}
-*/
 article {
   width: 90%;
   margin: 0 0 2rem auto;

@@ -156,32 +156,34 @@ article h3 {
 	}
 }
 header {
-	&#header {
-		background-color: var(--header-bgcolor);
-		width: 100%;
-	}
-	nav#navbar {
+	background-color: var(--header-bgcolor);
+	width: 100%;
+	nav {
+		padding: 0.5em;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: start;
 		align-items: center;
 		width: 100%;
-	}
-
-	a {
-		background-color: #f77;
-		opacity: 0.8;
-		border-radius: 0.3em;
-		box-shadow: 5px 10px #1e1e1e;
-		font-size: 1rem;
-		display: block;
-		color: white;
-		text-align: center;
-		margin: 0 1rem;
-	}
-	a:hover {
-		opacity: 1;
+    	a {
+			padding: 0.2em 0.3em;
+			width: auto;
+			height: auto;
+    		background-color: #f77;
+    		opacity: 0.8;
+    		border-radius: 0.3em;
+    		box-shadow: 0.3em 0.3em 0.3em #1e1e1e;
+    		margin: 0.3em 0.3em;
+    		font-size: 1rem;
+    		display: block;
+    		color: white;
+    		text-align: center;
+    		margin: 0 1rem;
+        	&:hover {
+        		opacity: 1;
+        	}
+		}
 	}
 }
 
@@ -196,6 +198,27 @@ section {
 	}
 	h2 {
 		font-size: 1.2rem;
+	}
+	form {
+		padding: 1em;
+		input, textarea {
+			background-color: white;
+			color: black;
+			padding: 0.3em;
+		}
+		input[type="submit"] {
+			color: yellow;
+			border: none;
+			background-color: green;
+    		opacity: 0.8;
+    		border-radius: 0.3em;
+    		box-shadow: 0.3em 0.3em 0.3em #1e1e1e;
+			margin: 0.5em 1em;
+			padding: 0.5em 1em;
+			&:hover {
+				opacity: 1;
+			}
+		}
 	}
 }
 #welcome-section {
@@ -217,13 +240,7 @@ h2 {
 	line-height: normal;//1.6;
 	margin: 0.5em 0 1em 0;
 }
-/*
-.fixed-item {
-	position: sticky;
-	top: 0;
-	z-index: 999;
-}
-*/
+
 article {
 	width: 90%;
 	margin: 0 0 2rem auto;
