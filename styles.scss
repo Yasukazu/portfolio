@@ -28,31 +28,31 @@ body {
 	display: flex;
 	flex-direction: column;
 	font-family: 'Noto Serif JP', serif;
-	font-size: 16px;
+	font-size: 3.2vmin;
 	background-color: var(--main-bgcolor);
 	color: white;
 	padding: 0.5em 1em;
 	line-height: normal;//1.5;
-	padding-bottom: 0.5rem;
+	padding-bottom: 0.5em;
 	h1, h2, h3, h4, h5, h6 {
 		font-family: 'Noto Sans JP', sans-serif;
 	}
 }
 header {
 	overflow-y: auto;
-    min-height: 2rem;
+    min-height: 2em;
 	* {
-		font-size: 1rem;
+		font-size: 1em;
 	}
 }
 footer {
 	margin: 0;
 	width: 100%;
 	overflow-y: auto;
-	min-height: 4rem;
-	padding-bottom: 0.5rem;
+	min-height: 4em;
+	padding-bottom: 0.5em;
 	* {
-		font-size: 0.7rem;
+		font-size: 0.7em;
 	}
 }
 main {
@@ -104,7 +104,7 @@ ul.social-icons {
 footer {
 	color: #f0f;
 	background-color: #030;
-	font-size: 1rem;
+	font-size: 1em;
 	line-height: normal;//1.2em;
 	* {
 		margin: 0.5em 1em;
@@ -176,11 +176,11 @@ header {
     		border-radius: 0.3em;
     		box-shadow: 0.3em 0.3em 0.3em #1e1e1e;
     		margin: 0.3em 0.3em;
-    		font-size: 1rem;
+    		font-size: 1em;
     		display: block;
     		color: white;
     		text-align: center;
-    		margin: 0 1rem;
+    		margin: 0 1em;
         	&:hover {
         		opacity: 1;
         	}
@@ -198,7 +198,7 @@ section {
 		background-color: var(--main-bgcolor);
 	}
 	h2 {
-		font-size: 1.2rem;
+		font-size: 1.2em;
 	}
 	form {
 		padding: 1em;
@@ -232,19 +232,19 @@ section {
 	}
 }
 h1 {
-	font-size: 1.5rem;
+	font-size: 1.5em;
 	text-align: center;
-	margin: 0.5rem 0 1rem 0;
+	margin: 0.5em 0 1em 0;
 }
 h2 {
-	font-size: 1.2rem;
+	font-size: 1.2em;
 	line-height: normal;//1.6;
 	margin: 0.5em 0 1em 0;
 }
 
 article {
 	width: 90%;
-	margin: 0 0 2rem auto;
+	margin: 0 0 2em auto;
 	h3 {
 		&:after {
 			content: ":";
@@ -255,11 +255,11 @@ article {
 	display: block;
 	height: 65vh;
 	width: 100%;
-	margin: 2rem 0;
+	margin: 2em 0;
 }
 div {
 	&.social-icons {
-		margin: 0 0 0 1rem;
+		margin: 0 0 0 1em;
 	}
 }
 i {
@@ -324,12 +324,11 @@ svg {
     	flex-direction: column;
     	height: auto;
     	width: 100vw;
-    	gap: 1rem 0;
+    	gap: 1em 0;
 	}
 }
 .grid-contain {
 	display: grid;
-	/* grid-template-rows: 3rem 1fr 3rem;  */
 	grid-auto-rows: fit-content
 	 				auto 
 	 				fit-content;

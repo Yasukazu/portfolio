@@ -59,6 +59,7 @@
  */
 :where(body) {
   margin: 0;
+  font-size: 2.6vmin;
 }
 
 /**
@@ -376,12 +377,12 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Noto Serif JP", serif;
-  font-size: 16px;
+  font-size: 3.2vmin;
   background-color: var(--main-bgcolor);
   color: white;
   padding: 0.5em 1em;
   line-height: normal;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.5em;
 }
 body h1, body h2, body h3, body h4, body h5, body h6 {
   font-family: "Noto Sans JP", sans-serif;
@@ -389,21 +390,21 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 
 header {
   overflow-y: auto;
-  min-height: 2rem;
+  min-height: 2em;
 }
 header * {
-  font-size: 1rem;
+  font-size: 1em;
 }
 
 footer {
   margin: 0;
   width: 100%;
   overflow-y: auto;
-  min-height: 4rem;
-  padding-bottom: 0.5rem;
+  min-height: 4em;
+  padding-bottom: 0.5em;
 }
 footer * {
-  font-size: 0.7rem;
+  font-size: 0.7em;
 }
 
 main {
@@ -454,7 +455,7 @@ ul.social-icons li {
 footer {
   color: #f0f;
   background-color: #030;
-  font-size: 1rem;
+  font-size: 1em;
   line-height: normal;
 }
 footer * {
@@ -529,11 +530,11 @@ header nav a {
   border-radius: 0.3em;
   box-shadow: 0.3em 0.3em 0.3em #1e1e1e;
   margin: 0.3em 0.3em;
-  font-size: 1rem;
+  font-size: 1em;
   display: block;
   color: white;
   text-align: center;
-  margin: 0 1rem;
+  margin: 0 1em;
 }
 header nav a:hover {
   opacity: 1;
@@ -550,7 +551,7 @@ section article {
   background-color: var(--main-bgcolor);
 }
 section h2 {
-  font-size: 1.2rem;
+  font-size: 1.2em;
 }
 section form {
   padding: 1em;
@@ -583,20 +584,20 @@ section form input[type=submit]:hover {
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   text-align: center;
-  margin: 0.5rem 0 1rem 0;
+  margin: 0.5em 0 1em 0;
 }
 
 h2 {
-  font-size: 1.2rem;
+  font-size: 1.2em;
   line-height: normal;
   margin: 0.5em 0 1em 0;
 }
 
 article {
   width: 90%;
-  margin: 0 0 2rem auto;
+  margin: 0 0 2em auto;
 }
 article h3:after {
   content: ":";
@@ -606,11 +607,11 @@ article h3:after {
   display: block;
   height: 65vh;
   width: 100%;
-  margin: 2rem 0;
+  margin: 2em 0;
 }
 
 div.social-icons {
-  margin: 0 0 0 1rem;
+  margin: 0 0 0 1em;
 }
 
 i.fab {
@@ -671,12 +672,11 @@ svg.svg-social {
     flex-direction: column;
     height: auto;
     width: 100vw;
-    gap: 1rem 0;
+    gap: 1em 0;
   }
 }
 .grid-contain {
   display: grid;
-  /* grid-template-rows: 3rem 1fr 3rem;  */
   grid-auto-rows: fit-content auto fit-content;
   grid-template-columns: 1fr;
   grid-template-areas: "top" "center" "bottom";
