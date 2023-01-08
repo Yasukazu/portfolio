@@ -71,6 +71,24 @@ html(lang="en")
         a#a-3.anchor
         h2 Please consider my skill might help your work!
           span(lang='ja') お仕事のお役に立てることを期待します
+        fieldset    
+          legend Please use this form to send mail to this webpage owner #[span(lang='ja') このウェブページの持ち主にメールを送るにはこのフォームをご利用ください]
+          form(action='mailto:mail@yskz.dev' method='post' enctype='textplain')
+            | Your name 
+            span(lang='ja') あなたのお名前
+            | :
+            input(type='text' name='name')
+            br
+            | Your email address 
+            span(lang='ja') あなたのメールアドレス
+            | :
+            input(type='email' name='email' placeholder='your-email-address@your-domain' size='30')
+            br
+            | Text 
+            span(lang='ja') 本文
+            br
+            input(type='text' name='content' size='100')
+            input(type='submit' name='submit' value='Submit / 送信')
         ul.social-icons
             li
               a.profile-link(href='https://github.com/yasukazu/portfolio/' target='_blank' rel='noopener')
