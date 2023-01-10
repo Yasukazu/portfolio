@@ -38,6 +38,7 @@ body {
 		font-family: 'Noto Sans JP', sans-serif;
 	}
 }
+
 header {
 	overflow-y: auto;
     min-height: 2em;
@@ -45,19 +46,45 @@ header {
 		font-size: 1em;
 	}
 }
+main {
+	position: relative;
+	overflow-y: auto;
+}
 footer {
-	margin: 0;
 	width: 100%;
 	overflow-y: auto;
 	min-height: 4em;
 	padding-bottom: 0.5em;
-	* {
-		font-size: 0.7em;
+	color: #f0f;
+	background-color: #030;
+	font-size: 1em;
+	line-height: normal;//1.2em;
+	padding: 0.5em 1em;
+	text-align: left;
+	li {
+	  font-size: 1em;
 	}
-}
-main {
-	position: relative;
-	overflow-y: auto;
+	svg {
+		margin-left: 0em;
+		margin-right: 0em;
+	}
+	a {
+		text-decoration: dashed underline #77f;
+		text-underline-offset: 0.5ex;
+		font-size: 1em;
+		margin-left: 0em;
+		margin-right: 0.3em;
+
+	}
+	p {
+		word-break: normal;
+	}
+	summary {
+		opacity: 0.8;
+		&:hover {
+			opacity: 1;
+		}
+	}
 }
 
 a {
@@ -101,41 +128,7 @@ ul.social-icons {
 }
 
 
-footer {
-	color: #f0f;
-	background-color: #030;
-	font-size: 1em;
-	line-height: normal;//1.2em;
-	* {
-		margin: 0.5em 1em;
-		text-align: left;
-	}
-	li {
-	  font-size: 1em;
-	}
-    svg {
-		margin-left: 0em;
-		margin-right: 0em;
-	}
-	a {
-		text-decoration: dashed underline #77f;
-		text-underline-offset: 0.5ex;
-		font-size: 1em;
-		margin-left: 0em;
-		margin-right: 0.3em;
 
-	}
-
-	p {
-		word-break: normal;
-	}
-	summary {
-		opacity: 0.8;
-	}
-	summary:hover {
-		opacity: 1;
-	}
-}
 nav a span {
     font-size: smaller;
 }
@@ -340,9 +333,12 @@ svg {
 	grid-area: bottom;
 }
 
-@media only screen and (max-height: 640px) {
+$mobile-bp: 414px;
+
+@media only screen and (orientation: portrait) and (max-width: $mobile-bp), only screen and (orientation: landscape) and (max-height: $mobile-bp) {
+
 	:root {
-		font-size: 2.6vmin;
+		font-size: 3.2vmin;
 	}
 
 	.grid-contain {
