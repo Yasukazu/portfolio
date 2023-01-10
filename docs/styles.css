@@ -395,20 +395,45 @@ header * {
   font-size: 1em;
 }
 
+main {
+  position: relative;
+  overflow-y: auto;
+}
+
 footer {
-  margin: 0;
   width: 100%;
   overflow-y: auto;
   min-height: 4em;
   padding-bottom: 0.5em;
+  color: #f0f;
+  background-color: #030;
+  font-size: 1em;
+  line-height: normal;
+  padding: 0.5em 1em;
+  text-align: left;
 }
-footer * {
-  font-size: 0.7em;
+footer li {
+  font-size: 1em;
 }
-
-main {
-  position: relative;
-  overflow-y: auto;
+footer svg {
+  margin-left: 0em;
+  margin-right: 0em;
+}
+footer a {
+  text-decoration: dashed underline #77f;
+  text-underline-offset: 0.5ex;
+  font-size: 1em;
+  margin-left: 0em;
+  margin-right: 0.3em;
+}
+footer p {
+  word-break: normal;
+}
+footer summary {
+  opacity: 0.8;
+}
+footer summary:hover {
+  opacity: 1;
 }
 
 a {
@@ -449,40 +474,6 @@ ul.social-icons {
 ul.social-icons li {
   padding-left: 0em;
   margin-left: 0em;
-}
-
-footer {
-  color: #f0f;
-  background-color: #030;
-  font-size: 1em;
-  line-height: normal;
-}
-footer * {
-  margin: 0.5em 1em;
-  text-align: left;
-}
-footer li {
-  font-size: 1em;
-}
-footer svg {
-  margin-left: 0em;
-  margin-right: 0em;
-}
-footer a {
-  text-decoration: dashed underline #77f;
-  text-underline-offset: 0.5ex;
-  font-size: 1em;
-  margin-left: 0em;
-  margin-right: 0.3em;
-}
-footer p {
-  word-break: normal;
-}
-footer summary {
-  opacity: 0.8;
-}
-footer summary:hover {
-  opacity: 1;
 }
 
 nav a span {
@@ -685,9 +676,9 @@ svg.svg-social {
   grid-area: bottom;
 }
 
-@media only screen and (max-height: 640px) {
+@media only screen and (orientation: portrait) and (max-width: 414px), only screen and (orientation: landscape) and (max-height: 414px) {
   :root {
-    font-size: 2.6vmin;
+    font-size: 3.2vmin;
   }
 
   .grid-contain {
