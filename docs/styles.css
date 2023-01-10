@@ -59,7 +59,6 @@
  */
 :where(body) {
   margin: 0;
-  font-size: 2.6vmin;
 }
 
 /**
@@ -365,6 +364,7 @@
   --welcome-color: white;
   --projects-blue: #45567d;
   --main-bgcolor: rgb(82, 81, 81);
+  font-size: 16px;
 }
 
 html, body {
@@ -377,7 +377,6 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Noto Serif JP", serif;
-  font-size: 3.2vmin;
   background-color: var(--main-bgcolor);
   color: white;
   padding: 0.5em 1em;
@@ -512,7 +511,7 @@ header {
   background-color: var(--header-bgcolor);
   width: 100%;
 }
-header nav {
+header nav#navbar {
   padding: 0.5em;
   display: flex;
   flex-direction: row;
@@ -521,7 +520,7 @@ header nav {
   align-items: center;
   width: 100%;
 }
-header nav a {
+header nav#navbar a {
   padding: 0.2em 0.3em;
   width: auto;
   height: auto;
@@ -536,7 +535,7 @@ header nav a {
   text-align: center;
   margin: 0 1em;
 }
-header nav a:hover {
+header nav#navbar a:hover {
   opacity: 1;
 }
 
@@ -667,14 +666,6 @@ svg.svg-social {
 /* ul.social-icons a:after {
 	background-image: url("data:image/svg+xml,%3Csvg class='svg-24' stroke='%237ff' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' clip-rule='evenodd'%3E%3Cpath d='M14 4h-13v18h20v-11h1v12h-22v-20h14v1zm10 5h-1v-6.293l-11.646 11.647-.708-.708 11.647-11.646h-6.293v-1h8v8z'%3E%3C/path%3E%3C/svg%3E");
 } */
-@media only screen and (max-width: 550px) {
-  #navbar {
-    flex-direction: column;
-    height: auto;
-    width: 100vw;
-    gap: 1em 0;
-  }
-}
 .grid-contain {
   display: grid;
   grid-auto-rows: fit-content auto fit-content;
@@ -692,4 +683,14 @@ svg.svg-social {
 
 .grid-bottom {
   grid-area: bottom;
+}
+
+@media only screen and (max-height: 640px) {
+  :root {
+    font-size: 2.6vmin;
+  }
+
+  .grid-contain {
+    grid-auto-rows: min-content auto min-content;
+  }
 }
