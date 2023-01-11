@@ -685,3 +685,14 @@ svg.svg-social {
     grid-auto-rows: min-content auto min-content;
   }
 }
+svg path.fabicon {
+  fill: #f07;
+  stroke: #f07;
+}
+
+@media (prefers-color-scheme: dark) {
+  svg path.fabicon {
+    fill: #0f7;
+    stroke: #0f7;
+  }
+}
