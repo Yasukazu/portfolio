@@ -488,14 +488,8 @@ span[lang]:after {
   content: ") ";
 }
 
-article h3 span {
-  font-size: smaller;
-}
-article h3 span:before {
-  content: "(";
-}
-article h3 span:after {
-  content: ") ";
+body {
+  counter-reset: article 0;
 }
 
 header {
@@ -585,12 +579,22 @@ h2 {
   margin: 0.5em 0 1em 0;
 }
 
-article {
-  width: 90%;
+article.project {
+  width: 95%;
   margin: 0 0 2em auto;
 }
-article h3:after {
-  content: ":";
+article.project > h3 span {
+  font-size: smaller;
+}
+article.project > h3 span::before {
+  content: "(";
+}
+article.project > h3 span::after {
+  content: ") ";
+}
+article.project > h3::before {
+  counter-increment: article 1;
+  content: "A-" counter(article) ". ";
 }
 
 .codepen-iframe {
